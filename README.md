@@ -1,13 +1,13 @@
 # string-primitives-and-macros
 This program is my portfolio project for Oregon State University's Computer Architecture and Assembly Language course. This assignment was completed in March 2023.
 
-## Project instructions:
+## Project Instructions
 ### Program Description
 Write and test a MASM program to perform the following tasks:
 
 - Implement and test two **macros** for string processing. These macros should use Irvine’s ReadString to get input from the user, and WriteString procedures to display output.
-mGetString:  Display a prompt (input parameter, by reference), then get the user’s keyboard input into a memory location (output parameter, by reference). You may also need to provide a count (input parameter, by value) for the length of input string you can accommodate and a provide a number of bytes read (output parameter, by reference) by the macro.
-mDisplayString:  Print the string which is stored in a specified memory location (input parameter, by reference).
+  - mGetString:  Display a prompt (input parameter, by reference), then get the user’s keyboard input into a memory location (output parameter, by reference). You may also need to provide a count (input parameter, by value) for the length of input string you can accommodate and a provide a number of bytes read (output parameter, by reference) by the macro.
+  - mDisplayString:  Print the string which is stored in a specified memory location (input parameter, by reference).
 
 - Implement and test two **procedures** for signed integers which use string primitive instructions
 ReadVal: 
@@ -56,6 +56,3 @@ If the user enters nothing (empty input), display an error and re-prompt.
 1. For this assignment you are allowed to assume that the total sum of the valid numbers will fit inside a 32 bit register.
 2. We will be testing this program with positive and negative values.
 3. When displaying the average, only display the integer part (that is, drop/truncate any fractional part).
-4. Check the Course Syllabus for late submission guidelines.
-5. Find the assembly language instruction syntax and help in the CS271 Instructions Guide.
-6. To create, assemble, run,  and modify your program, follow the instructions on the course Syllabus Page’s "Tools" tab.
