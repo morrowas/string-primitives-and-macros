@@ -54,5 +54,8 @@ Write and test a MASM program to perform the following tasks:
 
 ### Notes
 1. For this assignment you are allowed to assume that the total sum of the valid numbers will fit inside a 32 bit register.
+  
 2. We will be testing this program with positive **_and_** negative values.
+   
 3. When displaying the average, only display the integer part (that is, drop/truncate any fractional part).
+   
