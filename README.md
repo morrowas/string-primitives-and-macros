@@ -6,16 +6,16 @@ This program is my portfolio project for Oregon State University's Computer Arch
 Write and test a MASM program to perform the following tasks:
 
 - Implement and test two **macros** for string processing. These macros should use Irvine’s **ReadString** to get input from the user, and **WriteString** procedures to display output.
-  - **mGetString**:  Display a prompt (* *input parameter, by reference* *), then get the user’s keyboard input into a memory location (* *output parameter, by reference* *). You may also need to provide a count (* *input parameter, by value* *) for the length of input string you can accommodate and a provide a number of bytes read (* *output parameter, by reference* *) by the macro.
-  - **mDisplayString**:  Print the string which is stored in a specified memory location (* *input parameter, by reference* *).
+  - **mGetString**:  Display a prompt (*input parameter, by reference*), then get the user’s keyboard input into a memory location (*output parameter, by reference*). You may also need to provide a count (*input parameter, by value*) for the length of input string you can accommodate and a provide a number of bytes read (*output parameter, by reference*) by the macro.
+  - **mDisplayString**:  Print the string which is stored in a specified memory location (*input parameter, by reference*).
 
 - Implement and test two **procedures** for signed integers which use string primitive instructions
   - **ReadVal**: 
     1. Invoke the **mGetString** macro (see parameter requirements above) to get user input in the form of a string of digits.
     2. Convert (using string primitives) the string of ascii digits to its numeric value representation (SDWORD), validating the user’s input is a valid number (no letters, symbols, etc).
-    3. Store this one value in a memory variable (* *output parameter, by reference* *). 
+    3. Store this one value in a memory variable (*output parameter, by reference*). 
   - **WriteVal**: 
-    1. Convert a numeric SDWORD value (* *input parameter, by value* *) to a string of ASCII digits.
+    1. Convert a numeric SDWORD value (*input parameter, by value*) to a string of ASCII digits.
     2. Invoke the **mDisplayString** macro to print the ASCII representation of the SDWORD value to the output.
 
 - Write a test program (in main) which uses the **ReadVal** and **WriteVal** procedures above to:
@@ -46,7 +46,7 @@ Write and test a MASM program to perform the following tasks:
 
 9. Procedures (except **main**) **must not** reference data segment variables by name. There is a **significant** penalty attached to violations of this rule.  Some global constants (properly defined using EQU, =, or TEXTEQU and not redefined) are allowed. These **must** fit the proper role of a constant in a program.
 
-10. The program **must** use Register Indirect addressing or string primitives (e.g. STOSD) for integer (SDWORD) array elements, and Base+Offset addressing for accessing parameters on the runtime stack.
+10. The program **must** use *Register Indirect* addressing or string primitives (e.g. STOSD) for integer (SDWORD) array elements, and *Base+Offset* addressing for accessing parameters on the runtime stack.
 
 11. Procedures **may** use local variables when appropriate.
 
@@ -54,5 +54,5 @@ Write and test a MASM program to perform the following tasks:
 
 ### Notes
 1. For this assignment you are allowed to assume that the total sum of the valid numbers will fit inside a 32 bit register.
-2. We will be testing this program with positive **and** negative values.
+2. We will be testing this program with positive **_and_** negative values.
 3. When displaying the average, only display the integer part (that is, drop/truncate any fractional part).
